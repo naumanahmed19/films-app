@@ -11,8 +11,7 @@
                         'enctype'=>'multipart/form-data'] ) !!}
 
                         @include('films.partials._form')
-
-                        <button type="submit" class="btn btn-green btn-md">Save</button>
+                        <button type="submit" class="btn btn-success">Save</button>
 
                         {!! Form::close() !!}
                     </div>

@@ -7,7 +7,6 @@ use App\Http\Requests\CreateCommentRequest;
 
 class CommentController extends Controller
 {
-
     public function __construct()
     {
         parent::__construct();
