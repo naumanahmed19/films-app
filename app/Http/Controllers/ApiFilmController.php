@@ -16,7 +16,7 @@ class ApiFilmController extends Controller
      */
     public function index()
     {
-        $films = Film::latest()->paginate(1);
+        $films = Film::with('comments')->latest()->paginate(1);
         $films->map(function ($film) {
             if ($image = $film->getFirstMediaUrl('featured', 'thumb')) {
                 $film['thumb'] = url($image);
